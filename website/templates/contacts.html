@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Arboris</title>
 </head>
 <body>
 <h1>{% for choice in results.all %}
         <li> {{ choice.titles }}</li>
-    {% endfor %}</h1>
-
+    {% endfor %}
+</h1>
+{{request.user}}
     <ul>
     {% for choice in results.all %}
         <li> {{ choice.titles }}</li>

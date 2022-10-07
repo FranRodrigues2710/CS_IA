@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view
+from sections.views import home_view, contact_page
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='homepage'),
-    path('contact/', home_view, name='contactpage')
+    path('contact/', contact_page, name='contactpage')
 ]

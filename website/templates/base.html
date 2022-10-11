@@ -6,8 +6,16 @@
 </head>
 <body>
 <h1>
-    Subpages go here
+    <small>
+    {% for choice in results.all %}
+        {{ choice.titles }}
+    {% endfor %}
+    </small>
 </h1>
+
+<h2>
+    {{ header.titles }}
+</h2>
   {% block content %}
 
   {% endblock %}

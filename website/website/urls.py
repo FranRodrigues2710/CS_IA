@@ -22,6 +22,7 @@ from sections.views import home_view, contact_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name='homepage'),
+    path('arboris/', home_view, name='homepage'),
+    #path('', ..., name='schoolpage'),
     path('contact/', contact_page, name='contactpage')
 ]

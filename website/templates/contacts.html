@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Arboris</title>
-</head>
-<body>
-<h1>{% for choice in results.all %}
-        <li> {{ choice.titles }}</li>
-    {% endfor %}
-</h1>
-{{request.user}}
-    <ul>
-    {% for choice in results.all %}
-        <li> {{ choice.titles }}</li>
-    {% endfor %}
-    </ul>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <html lang="en">
+
+    <body>
+    <h1>{% for choice in results.all %}
+            <h2>{{ choice.titles }}</h2>
+        {% endfor %}
+    </h1>
+    
+    </body>
+    </html>
+{% endblock %}

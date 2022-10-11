@@ -14,3 +14,6 @@ def contact_page(request):
                'header': title.objects.get(id=6)
                }
     return render(request, "contacts.html", context)
+
+def school_page(request):
+    return render(request, "schoolpage.html", {})

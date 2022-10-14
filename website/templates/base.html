@@ -4,14 +4,85 @@
     <meta charset="UTF-8">
     <title>Arboris</title>
 </head>
+
+<header class="transparent">
+    <span class="bg" style="opacity: 0;"></span>
+
+    <a href="/arboris" class="logo"><img src="/img/logo.png" alt="Logo ARBORIS" title="Logo ARBORIS" class="img-fluid"></a>
+
+    <div>
+        <a class="menu-toggle" role="button" aria-label="Open lateral menu">
+            <span></span>
+            <span></span>
+        </a>
+
+
+            <div class="social">
+
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="fab fa-linkedin-in"></a>
+
+            </div>
+
+            <ul class="menu">
+
+                    <li>
+                        <a href="/">Our purpose</a>
+
+                    </li>
+
+                    <li>
+                        <a href="/a-nossa-vocacao">...</a>
+
+                    </li>
+
+                    <li>
+                        <a href="/o-que-nos-distingue">...</a>
+
+                    </li>
+
+                    <li>
+                        <a href="/o-que-fazemos">...</a>
+
+                    </li>
+
+                    <li class="sub">
+                        <a href="/os-managing-partners">...</a>
+
+                            <ul>
+
+                                    <li><a href="/os-managing-partners/joao-rodrigues-pena">João Rodrigues Pena</a></li>
+
+                                    <li><a href="/os-managing-partners/jose-paulo-rodrigues">José Paulo Rodrigues</a></li>
+
+                            </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="/contact">Contacts</a>
+
+                    </li>
+
+                    <li class="sub">
+                        <a href="/noticias">News</a>
+
+                            <ul>
+
+                                    <li><a href="/noticias/artigos">Articles</a></li>
+
+                                    <li><a href="/noticias/imprensa">Press</a></li>
+
+                            </ul>
+
+                    </li>
+
+            </ul>
+
+    </div>
+</header>
+
 <body>
-<h1>
-    <small>
-    {% for choice in results.all %}
-        {{ choice.titles }}
-    {% endfor %}
-    </small>
-</h1>
+
 
 <h2>
     {{ header.titles }}
@@ -21,3 +92,5 @@
   {% endblock %}
 </body>
 </html>
+
+

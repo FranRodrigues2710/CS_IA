@@ -17,3 +17,39 @@ def contact_page(request):
 
 def school_page(request):
     return render(request, "schoolpage.html", {})
+
+def purpose_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=1)
+               }
+    return render(request, "contacts.html", context)
+
+def unique_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=3)
+               }
+    return render(request, "contacts.html", context)
+
+def motivation_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=2)
+               }
+    return render(request, "contacts.html", context)
+
+def partners_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=5)
+               }
+    return render(request, "contacts.html", context)
+
+def news_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=7)
+               }
+    return render(request, "contacts.html", context)
+
+def what_page(request):
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=4)
+               }
+    return render(request, "contacts.html", context)

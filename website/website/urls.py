@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page
 
 
 
@@ -24,5 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('arboris/', home_view, name='homepage'),
     path('', school_page, name='schoolpage'),
-    path('contact/', contact_page, name='contactpage')
+    path('contact/', contact_page, name='contactpage'),
+    path('motivation/', motivation_page, name='motivationpage'),
+    path('news/', news_page, name='newspage'),
+    path('partners/', partners_page, name='partnerspage'),
+    path('purpose/', purpose_page, name='purposepage'),
+    path('unique/', unique_page, name='uniquepage'),
+    path('what/', what_page, name='whatpage'),
 ]

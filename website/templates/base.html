@@ -7,9 +7,9 @@
 
 <header class="transparent">
     <span class="bg" style="opacity: 0;"></span>
-
-    <a href="/arboris" class="logo"><img src="/img/logo.png" alt="Logo ARBORIS" title="Logo ARBORIS" class="img-fluid"></a>
-
+    <a href="/arboris" class="logo" style="background-color:#000000">
+        <img src="https://www.arboris.pt/img/logo.png" alt="Logo ARBORIS" title="Logo ARBORIS" class="img-fluid">
+    </a>
     <div>
         <a class="menu-toggle" role="button" aria-label="Open lateral menu">
             <span></span>
@@ -26,17 +26,17 @@
             <ul class="menu">
 
                     <li>
-                        <a href="/">Our Purpose</a>
+                        <a href="/our-purpose">Our Purpose</a>
 
                     </li>
 
                     <li>
-                        <a href="/a-nossa-vocacao">Our Motivation</a>
+                        <a href="/our-motivation">Our Motivation</a>
 
                     </li>
 
                     <li>
-                        <a href="/o-que-nos-distingue">What Makes Us Unique</a>
+                        <a href="/what-makes-us-unique">What Makes Us Unique</a>
 
                     </li>
 
@@ -67,13 +67,35 @@
 
 <body>
 
+<h2 style="color:#ffffff"><center>
+        {{ header.titles }}
+</center>
 
-<h2>
-    {{ header.titles }}
 </h2>
   {% block content %}
 
   {% endblock %}
+
+
+<div class="container container-sm" style="background-color:#404040">
+        <div class="upper"><FONT COLOR="white">
+            <p>2022 © Arboris</p>
+
+            <p>Contacte-nos</p>
+            </FONT>
+        </div>
+
+        <div class="lower">
+
+            <div>
+                <font color="white">
+
+                    <span>(+351) 96 424 56 85 / (+351) 91 719 94 72 / (+351) 92 734 91 39</span>
+                    <span><a href="mailto:executive@arboris.pt">executive@arboris.pt</a></span>
+                </font>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

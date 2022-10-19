@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Arboris</title>
 </head>
 
 <header class="transparent">
     <span class="bg" style="opacity: 0;"></span>
     <a href="/arboris" class="logo">
-        <style>
-img{
-  display: block;
-  margin-right: auto;
-}
-        </style>
-        <img src="https://www.arboris.pt/img/logo.png" alt="Logo ARBORIS" title="Logo ARBORIS" class="img-fluid" style="background-color:#000000; width:20%">
-
+        <img src="https://www.arboris.pt/img/logo.png" alt="Logo ARBORIS" title="Logo ARBORIS" class="img">
     </a>
     <div>
         <a class="menu-toggle" role="button" aria-label="Open lateral menu">
@@ -25,7 +20,7 @@ img{
 
             <div class="social">
 
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="linkedin"></a>
 
             </div>
 
@@ -51,7 +46,7 @@ img{
 
                     </li>
 
-                    <li class="sub">
+                    <li>
                         <a href="/partners">Our Managing Partners</a>
 
                     </li>
@@ -73,9 +68,8 @@ img{
 
 <body>
 
-<h2 style=""><center>
+<h2 class="header">
         {{ header.titles }}
-</center>
 
 </h2>
   {% block content %}
@@ -84,26 +78,18 @@ img{
 
 
 <div class="contacts_info">
-    <style>
-    div {
-  background-color: DarkGrey;
-}
-    </style>
-    <center>
-        <div class="upper"><FONT COLOR="grey">
+        <div class="upper">
             <p>2022 © Arboris</p>
 
-            <p>Contacte-nos</p>
-            </FONT>
+            <p>Contact us</p>
         </div>
 
         <div class="lower">
 
             <div>
-                    <span style="color:grey">(+351) 96 424 56 85 / (+351) 91 719 94 72 / (+351) 92 734 91 39</span>
+                    <span>(+351) 96 424 56 85 / (+351) 91 719 94 72 / (+351) 92 734 91 39</span>
             </div>
-            <span><a href="mailto:executive@arboris.pt" style="color:grey">executive@arboris.pt</a></span
-                </center>
+            <span><a href="mailto:executive@arboris.pt">executive@arboris.pt</a></span>
         </div>
     </div>
 </body>

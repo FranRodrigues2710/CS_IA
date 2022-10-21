@@ -1,0 +1,478 @@
+.content .template * + .listing {
+	margin-top: 50px;
+}
+
+/************************************/
+/********** LISTING HEADER **********/
+/************************************/
+
+.listing .header {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.listing hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #e0dedd;
+}
+
+.template .listing .items h3,
+.template .listing .items .h3 {
+	font-size: 1.25rem;
+	color: black;
+	margin: 0;
+	transition: var(--transition);
+}
+
+.listing .items > *:not(hr) {
+	position: relative;
+}
+
+
+@media(min-width: 768px) {
+	.content .template * + .listing {
+		margin-top: 70px;
+	}
+
+	.listing .header {
+        display: flex;
+		align-items: flex-end;
+	}
+	.listing .header .link {
+        margin-top: 0;
+	}
+}
+
+@media(min-width: 992px) {
+	.content .template * + .listing {
+		margin-top: 100px;
+	}
+}
+
+
+/******************************************/
+/********** GENERIC ITEM LISTING **********/
+/******************************************/
+
+.listing .item {
+	padding: 25px 0;
+}
+
+.listing .item h3,
+.listing .item .h3 {
+	flex: 1;
+}
+
+.listing .item .link {
+	margin-top: 15px;
+}
+
+
+@media(min-width: 768px) {
+    .listing .item {
+		padding: 44px 0;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.listing .item h3,
+	.listing .item .h3 {
+		padding-right: 40px;
+	}
+
+	.listing .item .link {
+		margin-top: 0;
+    }
+}
+
+
+/**********************************/
+/********** FILE LISTING **********/
+/**********************************/
+
+.listing .file {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.listing .file .image {
+	width: 40px;
+}
+
+.listing .items .file h3,
+.listing .items .file .h3 {
+	flex: 1;
+	font-size: 1.75rem;
+	padding-left: 20px;
+	min-width: calc(100% - 40px);
+}
+
+.listing .file .link {
+	padding-left: 60px;
+	margin-top: 15px;
+}
+
+
+@media(min-width: 768px) {
+	.listing .file {
+		padding: 30px 0;
+	}
+
+	.listing .items .file h3,
+	.listing .items .file .h3 {
+		min-width: auto;
+		padding: 0 40px;
+	}
+
+	.listing .file .link {
+		padding-left: 0;
+		margin-top: 0;
+	}
+}
+
+
+/***************************************/
+/********** ACCORDION LISTING **********/
+/***************************************/
+
+.listing .accordion > div {
+	position: relative;
+	padding: 20px 0;
+	padding-right: 45px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.template .listing .accordion h3,
+.template .listing .accordion .h3 {
+	font-size: 1.75rem;
+    padding-right: 40px;
+}
+
+.listing .accordion > div:first-child:hover h3,
+.listing .accordion > div:first-child:focus h3,
+.listing .accordion > div:first-child:hover .h3,
+.listing .accordion > div:first-child:focus .h3,
+.listing .accordion.open > div:first-child h3,
+.listing .accordion.open > div:first-child .h3 {
+	color: var(--gold);
+}
+
+.listing .accordion .toggle {
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	top: 0;bottom: 0;
+	right: 0;
+	margin: auto;
+	transition: var(--transition);
+}
+.listing .accordion .toggle:hover,
+.listing .accordion .toggle:focus {
+	transform: scale(1.1);
+}
+.listing .accordion .toggle::before,
+.listing .accordion .toggle::after {
+	content: "";
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+	height: 2px;
+	width: 100%;
+	background-color: black;
+	transition: var(--transition);
+}
+.listing .accordion .toggle::after {
+	transform: rotate(90deg);
+}
+.listing .accordion.open .toggle::after,
+.listing .accordion.active .toggle::after {
+	transform: rotate(0deg);
+}
+
+.listing .accordion .description {
+	padding: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: var(--transition);
+	cursor: default;
+}
+
+.listing .accordion.active .description {
+	max-height: none;
+}
+
+.listing .accordion .description > *:first-child {
+	margin-top: 5px;
+}
+.listing .accordion .description > *:last-child {
+	margin-bottom: 30px;
+}
+
+.listing .accordion .description .button {
+	padding: 10px 25px;
+	margin-top: 35px;
+}
+
+
+@media(min-width: 768px) {
+	.listing .accordion > div {
+        padding: 37px 0;
+	}
+
+	.listing .accordion .toggle {
+		height: 34px;
+		width: 34px;
+	}
+
+	.listing .accordion .description {
+		padding: 0 65px 0 0;
+    }
+	.listing .accordion .description > *:first-child {
+		margin-top: 15px;
+	}
+	.listing .accordion .description > *:last-child {
+		margin-bottom: 40px;
+	}
+}
+
+
+/************************************/
+/********** BUTTON LISTING **********/
+/************************************/
+
+.listing.listing-button .items {
+    margin: -5px;
+    font-size: 0;
+}
+
+.listing.listing-button .button {
+    margin: 5px;
+}
+
+
+/*************************************/
+/********** ARTICLE LISTING **********/
+/*************************************/
+
+.listing.listing-article .items.row {
+    margin: -15px
+}
+
+.listing .article img {
+	margin: 0;
+}
+.listing .article h2,
+.listing .article .h2,
+.listing .card h2,
+.listing .card .h2 {
+	font-size: 1.875rem;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 0;
+    margin-top: 15px;
+}
+
+
+.listing .article .lower {
+    display: block;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+}
+.listing .article .lower span,
+.listing .card span {
+	font-family: var(--font-family-condensed);
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--gold);
+	letter-spacing: .075em;
+	text-transform: uppercase;
+}
+
+.listing .article .lower .button,
+.listing .card .button {
+	padding: 0;
+	margin-left: auto;
+	width: 40px;
+	height: 40px;
+}
+.listing .article .lower .button span,
+.listing .card .button span {
+	position: absolute;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+	margin: auto;
+	width: 70%;
+	height: 60%;
+	background-image: url(/assets/img/arrow-sm-white.svg);
+	background-repeat: no-repeat;
+	transition: inherit;
+}
+.listing .article .lower .button:hover span,
+.listing .article .lower .button:focus span,
+.listing .card .button:hover span,
+.listing .card .button:focus span {
+	transform: translateX(5px);
+}
+
+
+@media(min-width: 768px) {
+	.listing .article .lower .button {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media(min-width: 992px) {
+    .listing.listing-article .items.row {
+        margin: -28px
+    }
+    .listing .article {
+        padding: 28px
+    }
+    .listing .container.container-sm .article {
+        padding: 28px
+    }
+}
+
+
+/**********************************/
+/********** CARD LISTING **********/
+/**********************************/
+
+.listing.listing-card .items.row {
+	margin: -15px
+}
+.listing.listing-card .items.row > .card {
+	padding: 15px;
+	font-size: 0;
+	display: flex;
+}
+
+.listing.listing-card .card > div {
+	padding: 100px 60px 120px;
+	background-color: white;
+	position: relative;
+}
+
+.listing .card .button {
+	position: absolute;
+	bottom: 0;right: 0;
+}
+
+
+@media(min-width: 768px) {
+	.listing .card .button {
+		width: 62px;
+		height: 62px;
+	}
+}
+
+@media(min-width: 992px) {
+    .listing.listing-card .items.row {
+		margin: -20px;
+	}
+	.listing.listing-card .items.row > .card {
+		padding: 20px;
+	}
+
+	.listing.listing-card .card > div {
+		padding: 90px 55px 110px;
+	}
+}
+
+
+/****************************************/
+/********** LISTING PAGINATION **********/
+/****************************************/
+
+.listing .pagination {
+	margin-top: 50px;
+	justify-content: center;
+}
+
+.listing .pagination ul {
+	display: block;
+	text-align: center;
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+	margin: 0 -7px;
+}
+.listing .pagination ul li {
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--lightgrey);
+	line-height: 1;
+	display: inline-block;
+	padding: 0;
+}
+.listing .pagination ul li.disabled {
+	pointer-events:none;
+	opacity: .4;
+}
+.listing .pagination ul li.prev {
+	margin-right: 10px;
+}
+.listing .pagination ul li.next {
+	margin-left: 10px;
+}
+.listing .pagination ul li::before {
+	content: normal;
+}
+.listing .pagination ul li a,
+.listing .pagination ul li.ellipsis {
+	color: var(--lightgrey);
+    padding: 0 7px;
+	display: inline-block;
+	border: none;
+}
+.listing .pagination ul li a:hover,
+.listing .pagination ul li a:focus,
+.listing .pagination ul li.active a {
+	color: black;
+	border: none;
+}
+
+.listing .pagination ul li.prev a,
+.listing .pagination ul li.next a {
+    width: 15px;
+    height: 15px;
+	background-image: url(/assets/img/arrow-sm-black.svg);
+	background-repeat: no-repeat;
+}
+.listing .pagination ul li.prev a {
+	transform: rotate(180deg);
+}
+
+
+@media(min-width: 768px) {
+    .listing .pagination {
+        margin-top: 70px;
+    }
+}
+
+@media(min-width: 992px) {
+    .listing .pagination {
+        margin-top: 100px;
+    }
+
+    .listing .pagination ul {
+        margin: 0;
+	}
+    .listing .pagination ul li a,
+    .listing .pagination ul li.ellipsis {
+		padding: 0 9px;
+	}
+	.listing .pagination ul li.prev {
+		margin-right: 15px;
+    }
+    .listing .pagination ul li.next {
+        margin-left: 15px;
+    }
+}

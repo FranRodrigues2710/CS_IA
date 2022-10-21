@@ -1,0 +1,255 @@
+/**********************************************/
+/********** HOMEPAGE BANNERS SECTION **********/
+/**********************************************/
+
+.hp-banners {
+	position: relative;
+	padding-top: 132.81%;
+	height: 0;
+}
+
+.hp-banners .slider {
+	position: absolute;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+}
+.hp-banners .slider,
+.hp-banners .slider .slick-track,
+.hp-banners .slider .slick-list,
+.hp-banners .slider .slide {
+	height: 100%;
+}
+.hp-banners .slider:not(.slick-slider) {
+    display: flex;
+    overflow: hidden;
+}
+.hp-banners .slider:not(.slick-slider) > .slide {
+    flex-basis: 100%;
+    min-width: 100%;
+}
+.hp-banners .slider .slide {
+	position: relative;
+}
+
+.hp-banners .slider-arrows > div {
+	cursor: pointer;
+	position: absolute;
+	top: 0;bottom: 0;
+	width: 17px;
+	height: 32px;
+	font-size: 0;
+	margin: auto;
+	pointer-events: auto;
+	background-image: url(/assets/img/chevron-white.svg);
+	background-repeat: no-repeat;
+	opacity: .3;
+	transition: var(--transition);
+}
+.hp-banners .slider-arrows > div:hover,
+.hp-banners .slider-arrows > div:focus {
+	opacity: 1;
+}
+
+.hp-banners .slider-arrows > div.prev {
+	left: 10px;
+    transform: rotate(180deg);
+}
+.hp-banners .slider-arrows > div.next {
+	right: 10px;
+}
+
+/********** IMAGE **********/
+
+.hp-banners .image {
+	position: absolute;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.hp-banners .image::after {
+	content: "";
+	position: absolute;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+	background-color: #878a94;
+	opacity: 1;
+	pointer-events: none;
+	mix-blend-mode: multiply;
+}
+
+.hp-banners .image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/********** DESCRIPTION **********/
+
+.hp-banners .container {
+    position: absolute;
+    bottom: 50px;
+    left: 0;right: 0;
+	margin: auto;
+}
+
+.hp-banners .description {
+	padding: 0 30px;
+}
+
+.hp-banners .description h2 {
+    font-size: 1.9rem;
+	font-weight: 300;
+	color: white;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.hp-banners .description p {
+	display: inline-block;
+    font-size: 1rem;
+	font-weight: 300;
+	color: white;
+	line-height: 1.625;
+	margin: 0;
+	margin-top: 15px;
+}
+
+
+@media(min-width: 768px) {
+	.hp-banners {
+		padding-top: 75%;
+	}
+
+	.hp-banners .container {
+		bottom: 80px;
+	}
+
+	.hp-banners .description {
+		padding: 0;
+	}
+
+	.hp-banners .slider-arrows > div {
+		width: 27px;
+		height: 49px;
+	}
+}
+
+@media(min-width: 992px) {
+
+	.hp-banners .container .description {
+		max-width: 80%;
+	}
+	.hp-banners .description h2 {
+		font-size: 3.125rem;
+	}
+	.hp-banners .description p {
+		margin-top: 35px;
+	}
+
+	.hp-banners .slider-arrows > div {
+		width: 32px;
+		height: 60px;
+	}
+	.hp-banners .slider-arrows > div.prev {
+		left: 50px;
+	}
+	.hp-banners .slider-arrows > div.next {
+		right: 50px;
+	}
+}
+
+@media(min-width: 1200px) {
+	.hp-banners {
+		padding-top: 41%;
+	}
+}
+
+@media(min-width: 1400px) {
+	.hp-banners .container {
+		bottom: 110px;
+	}
+
+	.hp-banners .container .description {
+		max-width: 60%;
+	}
+}
+
+
+/***********************************************/
+/********** HOMEPAGE ABOUT US SECTION **********/
+/***********************************************/
+
+.hp-about-us {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.hp-about-us .logo {
+	max-width: 90px;
+	font-size: 0;
+	margin: 0 auto 25px;
+}
+
+.hp-about-us h1 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	color: black;
+	line-height: 1.25;
+	margin: 0;
+}
+.hp-about-us p {
+	font-size: 1rem;
+	font-weight: 300;
+	color: var(--grey);
+	line-height: 1.625;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.hp-about-us .button {
+	margin-top: 40px;
+}
+
+
+@media(min-width: 768px) {
+	.hp-about-us {
+		margin: 70px 0;
+	}
+}
+
+@media(min-width: 992px) {
+	.hp-about-us {
+		margin: 100px 0;
+	}
+}
+
+@media(min-width: 1200px) {
+	.hp-about-us .container {
+		max-width: 890px;
+	}
+}
+
+
+/*************************************************/
+/********** HOMEPAGE HIGHLIGHTS SECTION **********/
+/*************************************************/
+
+.hp-highlights {
+	margin: 55px 0 60px;
+}
+
+
+@media(min-width: 768px) {
+	.hp-highlights {
+		margin: 80px 0 85px;
+	}
+}
+
+@media(min-width: 992px) {
+	.hp-highlights {
+		margin: 110px 0 120px;
+	}
+}

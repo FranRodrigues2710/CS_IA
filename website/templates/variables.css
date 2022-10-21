@@ -1,0 +1,17 @@
+:root {
+    --black: #353333;
+	--darkgrey: #414140;
+	--grey: #5f5e5e;
+	--lightgrey: #b2b1b1;
+    --white: #f9f8f8;
+
+    --warning: #d8411b;
+
+    --gold: #d2b084;
+    --lightgold: #ffe9cc;
+
+    --transition: all .2s ease-in-out;
+
+    --font-family: OpenSans, sans-serif;
+    --font-family-condensed: OpenSansCondensed, sans-serif;
+}

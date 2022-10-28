@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, bootstrap
 
 
 
@@ -31,4 +31,5 @@ urlpatterns = [
     path('our-purpose/', purpose_page, name='purposepage'),
     path('what-makes-us-unique/', unique_page, name='uniquepage'),
     path('what-we-do/', what_page, name='whatpage'),
+    path('arboris/static/bootstrap.min.css', bootstrap, name='css')
 ]

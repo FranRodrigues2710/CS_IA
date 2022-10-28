@@ -53,3 +53,6 @@ def what_page(request):
                'header': title.objects.get(id=4)
                }
     return render(request, "contacts.html", context)
+
+def bootstrap(request):
+    return render(request, "bootstrap.min.css")

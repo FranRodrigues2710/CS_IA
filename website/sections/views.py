@@ -59,3 +59,6 @@ def css(request):
 
 def css2(request):
     return render(request, "variables.css", "styles.css", "listings.css", "static/hp.css")
+
+def jpg(request):
+    return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg")

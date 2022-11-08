@@ -16,8 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, bootstrap
-
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2
 
 
 urlpatterns = [
@@ -31,5 +30,15 @@ urlpatterns = [
     path('our-purpose/', purpose_page, name='purposepage'),
     path('what-makes-us-unique/', unique_page, name='uniquepage'),
     path('what-we-do/', what_page, name='whatpage'),
-    path('arboris/static/bootstrap.min.css', bootstrap, name='css')
+    path('arboris/static/bootstrap.min.css', css, name='css'),
+    path('arboris/static/fontawesome.min.css', css, name='css'),
+    path('arboris/static/slick.css', css, name='css'),
+    path('arboris/static/slick-theme.css', css, name='css'),
+    path('arboris/static/fonts.css', css, name='css'),
+    path('arboris/static/variables.css', css2, name='css'),
+    path('arboris/static/styles.css', css2, name='css'),
+    path('arboris/static/listings.css', css2, name='css'),
+    path('arboris/static/hp.css', css2, name='css'),
 ]
+
+

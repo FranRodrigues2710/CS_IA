@@ -54,5 +54,8 @@ def what_page(request):
                }
     return render(request, "contacts.html", context)
 
-def bootstrap(request):
-    return render(request, "bootstrap.min.css")
+def css(request):
+    return render(request, "bootstrap.min.css", "fontawesome.min.css", "slick.css", "slick-theme.css", "fonts.css")
+
+def css2(request):
+    return render(request, "variables.css", "styles.css", "listings.css", "static/hp.css")

@@ -39,9 +39,9 @@ urlpatterns = [
     path('arboris/static/styles.css', css2, name='css'),
     path('arboris/static/listings.css', css2, name='css'),
     path('arboris/static/hp.css', css2, name='css'),
-    path('arboris/uploads/hp-banners/arboris-1.jpg', jpg, name="pic")
-    path('arboris/uploads/hp-banners/arboris-4.jpg', jpg, name="pic")
-    path('arboris/uploads/hp-banners/arboris-5.jpg', jpg, name="pic")
+    path('arboris/static/uploads/hp-banners/arboris-1.jpg', jpg, name="pic"),
+    path('arboris/static/uploads/hp-banners/arboris-4.jpg', jpg, name="pic"),
+    path('arboris/static/uploads/hp-banners/arboris-5.jpg', jpg, name="pic"),
 ]
 
 

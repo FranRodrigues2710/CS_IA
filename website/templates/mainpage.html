@@ -1,154 +1,76 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<section class="hp-banners">
+        <div class="slider slick-initialized slick-slider">
+            <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" aria-label="slider" style="opacity: 1; width: 3915px; transform: translate3d(-783px, 0px, 0px);"><a class="slide slick-slide slick-cloned" href="/partners" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 783px;">
+                    <div class="image">
+                        <img src="https://www.arboris.pt/uploads/hp-banners/arboris-5.jpg">
+                    </div>
 
-<html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-  <style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+                    <div class="container">
+                        <div class="description">
+                            <h2>Independência, frontalidade, discrição e profundo sentido de compromisso com o Presidente e os Acionistas</h2>
+                            <p>Fundámos a ARBORIS para oferecer a conjugação das competências complementares de cada um dos Sócios e poder assessorar o Presidente e os Acionistas em desafios complexos e delicados onde a experiência, a senioridade, a sensibilidade e a postura ética sejam os fatores decisivos para enfrentar esses desafios com êxito. </p>
+                        </div>
+                    </div>
+                </a><a class="slide slick-slide slick-current slick-active" href="/our-motivation" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 783px;">
+                    <div class="image">
+                        <img src="https://www.arboris.pt/uploads/hp-banners/arboris-1.jpg">
+                    </div>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
+                    <div class="container">
+                        <div class="description">
+                            <h2>Ao lado do Presidente e dos Acionistas para os temas mais sensíveis e complexos</h2>
+                            <p>Estabelecemos relações de grande abertura e confiança para resolver desafios críticos de Governance do corpo Acionista e Societário, Alinhamento Estratégico do Negócio com os Objetivos dos Acionistas e Programas de Desenvolvimento e Transformação Organizacional </p>
+                        </div>
+                    </div>
+                </a><a class="slide slick-slide" href="/our-purpose" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 783px;">
+                    <div class="image">
+                        <img src="https://www.arboris.pt/uploads/hp-banners/arboris-4.jpg">
+                    </div>
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+                    <div class="container">
+                        <div class="description">
+                            <h2>Reforçando os valores e o legado das melhores empresas de raiz familiar</h2>
+                            <p>Escolhemos a marca ARBORIS, "da árvore" em latim, como símbolo de força, resiliência, tradição e ambição de longo prazo, assente em princípios sólidos de humanismo e ética</p>
+                        </div>
+                    </div>
+                </a><a class="slide slick-slide" href="/partners" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 783px;">
+                    <div class="image">
+                        <img src="https://www.arboris.pt/uploads/hp-banners/arboris-5.jpg">
+                    </div>
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+                    <div class="container">
+                        <div class="description">
+                            <h2>Independência, frontalidade, discrição e profundo sentido de compromisso com o Presidente e os Acionistas</h2>
+                            <p>Fundámos a ARBORIS para oferecer a conjugação das competências complementares de cada um dos Sócios e poder assessorar o Presidente e os Acionistas em desafios complexos e delicados onde a experiência, a senioridade, a sensibilidade e a postura ética sejam os fatores decisivos para enfrentar esses desafios com êxito. </p>
+                        </div>
+                    </div>
+                </a><a class="slide slick-slide slick-cloned" href="/our-motivation" data-slick-index="3" id="" aria-hidden="true" tabindex="-1" style="width: 783px;">
+                    <div class="image">
+                        <img src="https://www.arboris.pt/uploads/hp-banners/arboris-1.jpg">
+                    </div>
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-    <div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="https://www.arboris.pt/uploads/hp-banners/arboris-1.jpg" style="width:100%">
-      <div class="text">
-        <h2>Independência, frontalidade, discrição e profundo sentido de compromisso com o Presidente e os Acionistas</h2>
-        <p>Fundámos a ARBORIS para oferecer a conjugação das competências complementares de cada um dos Sócios e poder assessorar o Presidente e os Acionistas em desafios complexos e delicados onde a experiência, a senioridade, a sensibilidade e a postura ética sejam os fatores decisivos para enfrentar esses desafios com êxito. </p>
-      </div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://www.arboris.pt/uploads/hp-banners/arboris-4.jpg" style="width:100%">
-    <div class="text">
-      <h2>Ao lado do Presidente e dos Acionistas para os temas mais sensíveis e complexos</h2>
-      <p>Estabelecemos relações de grande abertura e confiança para resolver desafios críticos de Governance do corpo Acionista e Societário, Alinhamento Estratégico do Negócio com os Objetivos dos Acionistas e Programas de Desenvolvimento e Transformação Organizacional </p>
-    </div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://www.arboris.pt/uploads/hp-banners/arboris-5.jpg" style="width:100%">
-    <div class="text">
-      <h2>Reforçando os valores e o legado das melhores empresas de raiz familiar</h2>
-      <p>Escolhemos a marca ARBORIS, "da árvore" em latim, como símbolo de força, resiliência, tradição e ambição de longo prazo, assente em princípios sólidos de humanismo e ética</p>
-    </div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-</body>
+                    <div class="container">
+                        <div class="description">
+                            <h2>Ao lado do Presidente e dos Acionistas para os temas mais sensíveis e complexos</h2>
+                            <p>Estabelecemos relações de grande abertura e confiança para resolver desafios críticos de Governance do corpo Acionista e Societário, Alinhamento Estratégico do Negócio com os Objetivos dos Acionistas e Programas de Desenvolvimento e Transformação Organizacional </p>
+                        </div>
+                    </div>
+                </a></div></div>
+        </div>
 
 
-</html>
+            <div class="slider-arrows">
+                <div class="prev slick-arrow" style=""></div>
+                <div class="next slick-arrow" style=""></div>
+            </div>
 
+    </section>
+
+<script src="/assets/slick/slick.min.js" type="text/javascript"></script>
+<script src="/assets/css-vars-ponyfill/css-vars-ponyfill.min.js" type="text/javascript"></script>
+<script src="/js/app.js"></script>
+<script src="/js/hp.js"></script>
 {% endblock %}

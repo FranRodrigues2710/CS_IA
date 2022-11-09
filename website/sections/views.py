@@ -62,3 +62,6 @@ def css2(request):
 
 def jpg(request):
     return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg")
+
+def test(request):
+    return render(request, 'test.html')

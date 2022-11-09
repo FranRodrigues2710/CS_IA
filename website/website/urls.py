@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, test
 
 
 urlpatterns = [
@@ -42,6 +42,7 @@ urlpatterns = [
     path('arboris/static/uploads/hp-banners/arboris-1.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-4.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-5.jpg', jpg, name="pic"),
+    path('test/', test, name="test")
 ]
 
 

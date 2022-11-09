@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     #my own
     'sections',
-    'templates',
 
 ]
 

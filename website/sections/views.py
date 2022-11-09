@@ -64,4 +64,7 @@ def jpg(request):
     return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg")
 
 def test(request):
-    return render(request, 'test.html')
+    context = {'results': title.objects.all(),
+               'header': title.objects.get(id=8)
+               }
+    return render(request, 'test.html', context)

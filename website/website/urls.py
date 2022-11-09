@@ -22,6 +22,7 @@ from sections.views import home_view, contact_page, school_page, purpose_page, u
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('arboris/', home_view, name='homepage'),
+    path('arboris/test/', test, name="bruh"),
     path('', school_page, name='schoolpage'),
     path('contact/', contact_page, name='contactpage'),
     path('our-motivation/', motivation_page, name='motivationpage'),
@@ -42,7 +43,4 @@ urlpatterns = [
     path('arboris/static/uploads/hp-banners/arboris-1.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-4.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-5.jpg', jpg, name="pic"),
-    path('test/', test, name="test")
 ]
-
-

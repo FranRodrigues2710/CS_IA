@@ -43,4 +43,6 @@ urlpatterns = [
     path('arboris/static/uploads/hp-banners/arboris-1.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-4.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/arboris-5.jpg', jpg, name="pic"),
+    path('arboris/static/uploads/hp-banners/logo-sm.jpg', jpg, name="pic"),
+    path('arboris/static/uploads/chevron-white.svg', jpg, name="pic"),
 ]

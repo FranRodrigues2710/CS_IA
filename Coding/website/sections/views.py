@@ -61,7 +61,7 @@ def css2(request):
     return render(request, "variables.css", "styles.css", "listings.css", "static/hp.css")
 
 def jpg(request):
-    return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg")
+    return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg", "logo-sm.jpg", "chevron-white.svg")
 
 def test(request):
     context = {'results': title.objects.all(),

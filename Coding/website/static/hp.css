@@ -40,7 +40,7 @@
 	font-size: 0;
 	margin: auto;
 	pointer-events: auto;
-	background-image: url('static/uploads/chevron-white.svg');
+	background-image: url('http://127.0.0.1:8000/arboris/static/uploads/chevron-white.svg');
 	background-repeat: no-repeat;
 	opacity: .3;
 	transition: var(--transition);

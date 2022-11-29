@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts, fonts2
 
 
 urlpatterns = [
@@ -49,4 +49,9 @@ urlpatterns = [
     path('arboris/static/uploads/arrow-sm-white.svg', jpg2, name="pic"),
     path('arboris/static/uploads/lupe-white.svg', jpg2, name="pic"),
     path('arboris/static/fa_brands-400.woff2', fonts, name="font"),
+    path('arboris/static/opensans-italic.woff2', fonts, name="font"),
+    path('arboris/static/opensans-light.woff2', fonts, name="font"),
+    path('arboris/static/opensans-regular.woff2', fonts, name="font"),
+    path('arboris/static/opensanscondensed-bold.woff2', fonts, name="font"),
+    path('arboris/static/opensanscondensed-light.woff2', fonts2, name="font"),
 ]

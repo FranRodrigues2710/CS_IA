@@ -67,4 +67,7 @@ def jpg2(request):
     return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg")
 
 def fonts(request):
-    return render(request, "fa-brands-400.woff2")
+    return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")
+
+def fonts2(request):
+    return render(request, "opensanscondensed-light.woff2")

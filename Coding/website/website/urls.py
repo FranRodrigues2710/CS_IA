@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, test
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('arboris/', home_view, name='homepage'),
-    path('arboris/test/', test, name="bruh"),
+#    path('arboris/test/', test, name="testpage"),
     path('', school_page, name='schoolpage'),
     path('contact/', contact_page, name='contactpage'),
     path('our-motivation/', motivation_page, name='motivationpage'),
@@ -45,4 +45,8 @@ urlpatterns = [
     path('arboris/static/uploads/hp-banners/arboris-5.jpg', jpg, name="pic"),
     path('arboris/static/uploads/hp-banners/logo-sm.jpg', jpg, name="pic"),
     path('arboris/static/uploads/chevron-white.svg', jpg, name="pic"),
+    path('arboris/static/uploads/ajax-loader.gif', jpg2, name="pic"),
+    path('arboris/static/uploads/arrow-sm-white.svg', jpg2, name="pic"),
+    path('arboris/static/uploads/lupe-white.svg', jpg2, name="pic"),
+    path('arboris/static/fa_brands-400.woff2', fonts, name="font"),
 ]

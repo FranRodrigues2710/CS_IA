@@ -61,10 +61,10 @@ def css2(request):
     return render(request, "variables.css", "styles.css", "listings.css", "static/hp.css")
 
 def jpg(request):
-    return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg", "logo-sm.jpg", "chevron-white.svg", )
+    return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg", "logo-sm.jpg", "chevron-white.svg")
 
-def test(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=8)
-               }
-    return render(request, 'test.html', context)
+def jpg2(request):
+    return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg")
+
+def fonts(request):
+    return render(request, "fa-brands-400.woff2")

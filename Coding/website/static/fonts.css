@@ -5,7 +5,7 @@
 /********** OpenSans Light **********/
 @font-face {
     font-family: "OpenSans";
-    src: url("/fonts/OpenSans-Light.woff2") format("woff2"),
+    src: url("http://127.0.0.1:8000/arboris/static/opensans-light.woff2") format("woff2"),
 		url("/fonts/OpenSans-Light.woff") format("woff");
 	font-weight: 300;
     font-style: normal;
@@ -25,7 +25,7 @@
 /********** OpenSans Regular **********/
 @font-face {
     font-family: "OpenSans";
-    src: url("/fonts/OpenSans-Regular.woff2") format("woff2"),
+    src: url("http://127.0.0.1:8000/arboris/static/opensans-regular.woff2") format("woff2"),
 		url("/fonts/OpenSans-Regular.woff") format("woff");
 	font-weight: normal;
     font-style: normal;
@@ -35,7 +35,7 @@
 /********** OpenSans Regular Italic **********/
 @font-face {
     font-family: "OpenSans";
-    src: url("/fonts/OpenSans-Italic.woff2") format("woff2"),
+    src: url("http://127.0.0.1:8000/arboris/static/opensans-light.woff2") format("woff2"),
 		url("/fonts/OpenSans-Italic.woff") format("woff");
 	font-weight: normal;
     font-style: italic;
@@ -110,7 +110,7 @@
 /********** OpenSans Light **********/
 @font-face {
     font-family: "OpenSansCondensed";
-    src: url("/fonts/OpenSansCondensed-Light.woff2") format("woff2"),
+    src: url("http://127.0.0.1:8000/arboris/static/opensanscondensed-light.woff2") format("woff2"),
 		url("/fonts/OpenSansCondensed-Light.woff") format("woff");
 	font-weight: 300;
     font-style: normal;
@@ -130,7 +130,7 @@
 /********** OpenSans Bold **********/
 @font-face {
     font-family: "OpenSansCondensed";
-    src: url("/fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+    src: url("http://127.0.0.1:8000/arboris/static/opensanscondensed-bold.woff2") format("woff2"),
 		url("/fonts/OpenSansCondensed-Bold.woff") format("woff");
 	font-weight: bold;
     font-style: normal;

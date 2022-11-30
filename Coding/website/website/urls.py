@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts, fonts2, js, js2
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
 
 
 urlpatterns = [
@@ -61,4 +61,26 @@ urlpatterns = [
     path('arboris/static/css-vars-ponyfill.min.js', js, name='js'),
     path('arboris/static/bootstrap.bundle.min.js', js, name='js'),
     path('arboris/static/app.js', js, name='js'),
+    path('arboris/static/opensans-bold.woff', fonts2, name="font"),
+    path('arboris/static/OpenSans-Bold.woff2', fonts2, name="font"),
+    path('arboris/static/opensans-bolditalic.woff', fonts2, name="font"),
+    path('arboris/static/opensans-bolditalic.woff2', fonts2, name="font"),
+    path('arboris/static/opensans-extrabold.woff', fonts3, name="font"),
+    path('arboris/static/opensans-extrabold.woff2', fonts3, name="font"),
+    path('arboris/static/opensans-extrabolditalic.woff', fonts3, name="font"),
+    path('arboris/static/opensans-extrabolditalic.woff2', fonts3, name="font"),
+    path('arboris/static/opensans-italic.woff', fonts3, name="font"),
+    path('arboris/static/opensans-light.woff', fonts4, name="font"),
+    path('arboris/static/opensans-lightitalic.woff', fonts4, name="font"),
+    path('arboris/static/opensans-lightitalic.woff2', fonts4, name="font"),
+    path('arboris/static/opensans-regular.woff', fonts4, name="font"),
+    path('arboris/static/opensans-semibold.woff', fonts4, name="font"),
+    path('arboris/static/opensans-semibold.woff2', fonts5, name="font"),
+    path('arboris/static/opensans-semibolditalic.woff', fonts5, name="font"),
+    path('arboris/static/opensans-semibolditalic.woff2', fonts5, name="font"),
+    path('arboris/static/opensanscondensed-bold.woff', fonts5, name="font"),
+    path('arboris/static/opensanscondensed-light.woff', fonts5, name="font"),
+    path('arboris/static/opensanscondensed-lightitalic.woff', fonts6, name="font"),
+    path('arboris/static/opensanscondensed-lightitalic.woff2', fonts6, name="font"),
+
 ]

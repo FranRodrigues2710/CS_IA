@@ -64,7 +64,7 @@ def jpg(request):
     return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg", "logo-sm.jpg", "chevron-white.svg")
 
 def jpg2(request):
-    return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg")
+    return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg", "arrow-sm-black.svg")
 
 def fonts(request):
     return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")

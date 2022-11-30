@@ -309,7 +309,7 @@
 	margin: auto;
 	width: 70%;
 	height: 60%;
-	background-image: url(/assets/img/arrow-sm-white.svg);
+	background-image: url('http://127.0.0.1:8000/arboris/static/uploads/arrow-sm-white.svg');
 	background-repeat: no-repeat;
 	transition: inherit;
 }
@@ -443,7 +443,7 @@
 .listing .pagination ul li.next a {
     width: 15px;
     height: 15px;
-	background-image: url(/assets/img/arrow-sm-black.svg);
+	background-image: url('http://127.0.0.1:8000/arboris/static/uploads/arrow-sm-black.svg');
 	background-repeat: no-repeat;
 }
 .listing .pagination ul li.prev a {

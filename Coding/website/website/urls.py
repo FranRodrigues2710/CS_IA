@@ -47,6 +47,7 @@ urlpatterns = [
     path('arboris/static/uploads/chevron-white.svg', jpg, name="pic"),
     path('arboris/static/uploads/ajax-loader.gif', jpg2, name="pic"),
     path('arboris/static/uploads/arrow-sm-white.svg', jpg2, name="pic"),
+    path('arboris/static/uploads/arrow-sm-black.svg', jpg2, name="pic"),
     path('arboris/static/uploads/lupe-white.svg', jpg2, name="pic"),
     path('arboris/static/fa_brands-400.woff2', fonts, name="font"),
     path('arboris/static/opensans-italic.woff2', fonts, name="font"),

@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('http://127.0.0.1:8000/arboris/static/uploads/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */

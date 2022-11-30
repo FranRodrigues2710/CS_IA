@@ -64,13 +64,18 @@ def jpg(request):
     return render(request, "arboris-1.jpg", "arboris-4.jpg", "arboris-5.jpg", "logo-sm.jpg", "chevron-white.svg")
 
 def jpg2(request):
-    return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg", "arrow-sm-black.svg")
+    return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg", "arrow-sm-black.svg", "arrow-link-gold.svg")
+
+def jpg3(request):
+    return render(request, "cross.svg", "lupe.svg", "quotation-marks.svg")
 
 def fonts(request):
     return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")
 
 def fonts2(request):
     return render(request, "opensanscondensed-light.woff2")
+
+def fonts3(request):
 
 def js(request):
     return render(request, "app.js", "bootstrap.bundle.min.js", "css-vars-ponyfill.min.js", "hp.js", "jquery.min.js")

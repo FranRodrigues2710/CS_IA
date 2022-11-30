@@ -73,10 +73,19 @@ def fonts(request):
     return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")
 
 def fonts2(request):
-    return render(request, "opensanscondensed-light.woff2")
+    return render(request, "opensanscondensed-light.woff2", "opensans-bold.woff", "OpenSans-Bold.woff2", "opensans-bolditalic.woff", "opensans-bolditalic.woff2")
 
 def fonts3(request):
+    return render(request, "opensans-extrabold.woff", "opensans-extrabold.woff2", "opensans-extrabolditalic.woff", "opensans-extrabolditalic.woff2", "opensans-italic.woff")
 
+def fonts4(request):
+    return render(request, "opensans-light.woff", "opensans-lightitalic.woff", "opensans-lightitalic.woff2", "opensans-regular.woff", "opensans-semibold.woff")
+
+def fonts5(request):
+    return render(request, "opensans-semibold.woff2", "opensans-semibolditalic.woff", "opensans-semibolditalic.woff2", "opensanscondensed-bold.woff", "opensanscondensed-light.woff")
+
+def fonts6(request):
+    return render(request, "opensanscondensed-lightitalic.woff", "opensanscondensed-lightitalic.woff2")
 def js(request):
     return render(request, "app.js", "bootstrap.bundle.min.js", "css-vars-ponyfill.min.js", "hp.js", "jquery.min.js")
 

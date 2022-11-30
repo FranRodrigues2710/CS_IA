@@ -71,3 +71,9 @@ def fonts(request):
 
 def fonts2(request):
     return render(request, "opensanscondensed-light.woff2")
+
+def js(request):
+    return render(request, "app.js", "bootstrap.bundle.min.js", "css-vars-ponyfill.min.js", "hp.js", "jquery.min.js")
+
+def js2(request):
+    return render(request, "slick.min.js")

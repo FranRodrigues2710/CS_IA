@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work" />
+    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
+      <change afterPath="$PROJECT_DIR$/Documentation/~$Crit_A.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/~$Crit_B.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669823405719</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="work">
+      <created>1669983647938</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669983647938</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

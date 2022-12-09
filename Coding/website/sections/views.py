@@ -22,37 +22,37 @@ def purpose_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=1)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "purpose.html", context)
 
 def unique_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=3)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "unique.html", context)
 
 def motivation_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=2)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "motivation.html", context)
 
 def partners_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=5)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "partners.html", context)
 
 def news_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=7)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "news.html", context)
 
 def what_page(request):
     context = {'results': title.objects.all(),
                'header': title.objects.get(id=4)
                }
-    return render(request, "contacts.html", context)
+    return render(request, "whatdo.html", context)
 
 def css(request):
     return render(request, "bootstrap.min.css", "fontawesome.min.css", "slick.css", "slick-theme.css", "fonts.css")

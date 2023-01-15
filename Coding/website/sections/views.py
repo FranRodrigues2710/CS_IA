@@ -67,7 +67,10 @@ def jpg2(request):
     return render(request, "ajax-loader.gif", "arrow-sm-white.svg", "lupe-white.svg", "arrow-sm-black.svg", "arrow-link-gold.svg")
 
 def jpg3(request):
-    return render(request, "cross.svg", "lupe.svg", "quotation-marks.svg")
+    return render(request, "cross.svg", "lupe.svg", "quotation-marks.svg", "forest-3448818.jpg", "forest-5442598.jpg")
+
+def jpg4(request):
+    return render(request, "hintersee-3601004.jpg", "nature-wallpaper-3622519.jpg", "sunset-1373171.jpg")
 
 def fonts(request):
     return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")

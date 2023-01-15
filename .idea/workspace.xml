@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
+      <change afterPath="$PROJECT_DIR$/Coding/website/static/uploads/hp-banner/forest-3448818.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding/website/static/uploads/hp-banner/forest-5442598.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding/website/static/uploads/hp-banner/hintersee-3601004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding/website/static/uploads/hp-banner/nature-wallpaper-3622519.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding/website/static/uploads/hp-banner/sunset-1373171.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/sections/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/sections/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coding/website/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coding/website/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/purpose.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/purpose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/website/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

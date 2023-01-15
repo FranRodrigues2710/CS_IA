@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, what_page, css, css2, jpg, jpg2, jpg3, jpg4, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
 
 
 urlpatterns = [
@@ -49,6 +49,13 @@ urlpatterns = [
     path('arboris/static/uploads/arrow-sm-white.svg', jpg2, name="pic"),
     path('arboris/static/uploads/arrow-sm-black.svg', jpg2, name="pic"),
     path('arboris/static/uploads/lupe-white.svg', jpg2, name="pic"),
+    path('arboris/static/uploads/quotation-marks.svg', jpg3, name="pic"),
+    path('arboris/static/uploads/lupe.svg', jpg3, name="pic"),
+    path('arboris/static/uploads/cross.svg', jpg3, name="pic"),
+    path('arboris/static/uploads/hp-banners/forest-5442598.jpg', jpg3, name="pic"),
+    path('arboris/static/uploads/hp-banners/hintersee-3601004.jpg', jpg4, name="pic"),
+    path('arboris/static/uploads/hp-banners/nature-wallpaper-3622519.jpg', jpg4, name="pic"),
+    path('arboris/static/uploads/hp-banners/sunset-1373171.jpg', jpg4, name="pic"),
     path('arboris/static/fa_brands-400.woff2', fonts, name="font"),
     path('arboris/static/opensans-italic.woff2', fonts, name="font"),
     path('arboris/static/opensans-light.woff2', fonts, name="font"),

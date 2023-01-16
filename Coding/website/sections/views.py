@@ -32,20 +32,20 @@ def partners_page(request):
 
 def news_page(request):
     context = {
-               'title1': news.title.all(),
-               'paragraph1': news.paragraph.all(),
-               'paragraph2': news.paragraph2.all(),
+               'title1': news.title.get(),
+               'paragraph1': news.paragraph.get(),
+               'paragraph2': news.paragraph2.get(),
                'image': news.image.get(),
                }
     return render(request, "news.html", context)
 
-def read_page(request):
+def read_page(request, my_id):
+    url = news.shortitle.get(id=my_id)
     context = {
-        'title1': news.title.all(),
-        'paragraph1': news.paragraph.all(),
-        'paragraph2': news.paragraph2.all(),
-        'image': news.image.all(),
-        'url': news.shortitle.all()
+        'title1': news.title.get(my_id),
+        'paragraph1': news.paragraph.get(my_id),
+        'paragraph2': news.paragraph2.get(my_id),
+        'image': news.image.get(my_id),
     }
     return render(request, "read.html", context)
 def login_page(request):

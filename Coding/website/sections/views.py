@@ -4,64 +4,60 @@ from .models import news
 # Create your views here.
 
 def home_view(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=8)
-               }
-    return render(request, "mainpage.html", context)
+
+    return render(request, "mainpage.html", )
 
 def contact_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=6)
-               }
-    return render(request, "contacts.html", context)
+
+    return render(request, "contacts.html", )
 
 def school_page(request):
-    return render(request, "schoolpage.html", {})
+    return render(request, "schoolpage.html")
 
 def purpose_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=1)
-               }
-    return render(request, "purpose.html", context)
+
+    return render(request, "purpose.html", )
 
 def unique_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=3)
-               }
-    return render(request, "unique.html", context)
+
+    return render(request, "unique.html", )
 
 def motivation_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=2)
-               }
-    return render(request, "motivation.html", context)
+
+    return render(request, "motivation.html", )
 
 def partners_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=5)
-               }
-    return render(request, "partners.html", context)
+
+    return render(request, "partners.html", )
 
 def news_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=7),
-               'title1': news.objects.get(),
-               'paragraph1': news.objects.get(),
-               'paragraph2': news.objects.get(),
-               'image': news.objects.get(),
+    context = {
+               'title1': news.title.all(),
+               'paragraph1': news.paragraph.all(),
+               'paragraph2': news.paragraph2.all(),
+               'image': news.image.get(),
                }
     return render(request, "news.html", context)
 
+def read_page(request):
+    context = {
+        'title1': news.title.all(),
+        'paragraph1': news.paragraph.all(),
+        'paragraph2': news.paragraph2.all(),
+        'image': news.image.all(),
+        'url': news.shortitle.all()
+    }
+    return render(request, "read.html", context)
 def login_page(request):
-    context = {'results': news.objects.all(),
 
-               }
-    return render(request, "news.html", context)
+    return render(request, "login.html")
+
+def signup_page(request):
+
+    return render(request, "signup.html")
 def what_page(request):
-    context = {'results': news.objects.all(),
-               'header': news.objects.get(id=4)
-               }
-    return render(request, "whatdo.html", context)
+
+    return render(request, "whatdo.html")
 
 def css(request):
     return render(request, "bootstrap.min.css", "fontawesome.min.css", "slick.css", "slick-theme.css", "fonts.css")

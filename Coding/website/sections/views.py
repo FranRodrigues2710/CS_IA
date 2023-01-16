@@ -1,17 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import title
+from .models import news
 # Create your views here.
 
 def home_view(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=8)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=8)
                }
     return render(request, "mainpage.html", context)
 
 def contact_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=6)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=6)
                }
     return render(request, "contacts.html", context)
 
@@ -19,38 +19,47 @@ def school_page(request):
     return render(request, "schoolpage.html", {})
 
 def purpose_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=1)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=1)
                }
     return render(request, "purpose.html", context)
 
 def unique_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=3)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=3)
                }
     return render(request, "unique.html", context)
 
 def motivation_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=2)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=2)
                }
     return render(request, "motivation.html", context)
 
 def partners_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=5)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=5)
                }
     return render(request, "partners.html", context)
 
 def news_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=7)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=7),
+               'title1': news.objects.get(),
+               'paragraph1': news.objects.get(),
+               'paragraph2': news.objects.get(),
+               'image': news.objects.get(),
                }
     return render(request, "news.html", context)
 
+def login_page(request):
+    context = {'results': news.objects.all(),
+
+               }
+    return render(request, "news.html", context)
 def what_page(request):
-    context = {'results': title.objects.all(),
-               'header': title.objects.get(id=4)
+    context = {'results': news.objects.all(),
+               'header': news.objects.get(id=4)
                }
     return render(request, "whatdo.html", context)
 

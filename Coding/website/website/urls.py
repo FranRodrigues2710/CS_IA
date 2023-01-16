@@ -61,6 +61,7 @@ urlpatterns = [
     path('arboris/static/uploads/hp-banner/joao-rodrigues-pena-arboris.jpg', jpg5, name="pic"),
     path('arboris/static/uploads/hp-banner/jose-paulo-rodrigues.jpg', jpg5, name="pic"),
     path('arboris/static/uploads/hp-banner/jose-paulo-rodrigues-arboris.jpg', jpg5, name="pic"),
+    path('arboris/static/uploads/hp-banner/startup-594090.jpg', jpg5, name="pic"),
     path('arboris/static/fa_brands-400.woff2', fonts, name="font"),
     path('arboris/static/opensans-italic.woff2', fonts, name="font"),
     path('arboris/static/opensans-light.woff2', fonts, name="font"),

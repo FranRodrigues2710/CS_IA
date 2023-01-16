@@ -73,7 +73,7 @@ def jpg4(request):
     return render(request, "hintersee-3601004.jpg", "nature-wallpaper-3622519.jpg", "sunset-1373171.jpg", "joao-rodrigues-pena.jpg")
 
 def jpg5(request):
-    return render(request, "joao-rodrigues-pena-arboris.jpg", "jose-paulo-rodrigues.jpg", "jose-paulo-rodrigues-arboris.jpg")
+    return render(request, "joao-rodrigues-pena-arboris.jpg", "jose-paulo-rodrigues.jpg", "jose-paulo-rodrigues-arboris.jpg", "startup-594090.jpg")
 
 def fonts(request):
     return render(request, "fa-brands-400.woff2", "opensans-italic.woff2", "opensans-light.woff2", "opensans-regular.woff2", "opensanscondensed-bold.woff2")

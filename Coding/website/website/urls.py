@@ -14,17 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 # my pages
 from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, create_news_page, partners_page, news_page, login_page, signup_page, read_page, what_page, css, css2, jpg, jpg2, jpg3, jpg4, jpg5, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('members/', include('members.urls')),
-    path('members/', include('django.contrib.auth.urls')),
+    path('accounts/', include("django.contrib.auth.urls")),
+    path('accounts/register/', signup_page, name='signup'),
     path('arboris/', home_view, name='homepage'),
-#    path('arboris/test/', test, name="testpage"),
     path('', school_page, name='schoolpage'),
     path('contact/', contact_page, name='contactpage'),
     path('our-motivation/', motivation_page, name='motivationpage'),
@@ -34,8 +33,6 @@ urlpatterns = [
     path('our-purpose/', purpose_page, name='purposepage'),
     path('what-makes-us-unique/', unique_page, name='uniquepage'),
     path('what-we-do/', what_page, name='whatpage'),
-    path('login/', login_page, name='loginpage'),
-    path('signup/', signup_page, name='signuppage'),
     path('read/<int:my_id>', read_page, name='readpage'),
     path('arboris/static/bootstrap.min.css', css, name='css'),
     path('arboris/static/fontawesome.min.css', css, name='css'),

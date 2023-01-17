@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<html lang="en">
-<body>
-
-</body>
-</html>
+<form method="post" style="margin: 200px 0px 200px 100px;">
+    {{ form.as_table}}
+    {% csrf_token %}
+    <input type="submit" value="Register">
+</form>
 {% endblock %}

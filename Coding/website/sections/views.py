@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import news
 from .forms import addingnews
+from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 
 def home_view(request):
@@ -58,8 +59,17 @@ def login_page(request):
     return render(request, "login.html")
 
 def signup_page(request):
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
 
-    return render(request, "signup.html")
+    else:
+        form = UserCreationForm()
+
+
+    return render(request, "signup.html", {'form': form})
 def what_page(request):
 
     return render(request, "whatdo.html")

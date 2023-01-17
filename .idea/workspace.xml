@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
-      <change afterPath="$PROJECT_DIR$/Coding/website/members/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coding/website/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/members/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/sections/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/sections/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/website/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coding/website/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/website/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,6 +61,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\arboris\Coding\website\templates" />
+      <recent name="C:\Users\User\PycharmProjects\arboris\Coding\website\templates\registration" />
       <recent name="C:\Users\cisco\PycharmProjects\arboris\venv" />
       <recent name="C:\Users\cisco\PycharmProjects\arboris\Coding\venv" />
     </key>
@@ -356,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673919579271</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="work">
+      <created>1673920254328</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673920254329</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

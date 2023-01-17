@@ -35,12 +35,13 @@ def news_page(request):
     return render(request, "news.html")
 
 def read_page(request, my_id):
-    url = news.shortitle.get(id=my_id)
+    info = news.objects.get(id=my_id)
+
     context = {
-        'title1': news.title.get(my_id),
-        'paragraph1': news.paragraph.get(my_id),
-        'paragraph2': news.paragraph2.get(my_id),
-        'image': news.image.get(my_id),
+        'title': info.title,
+        'paragraph1': info.paragraph,
+        'paragraph2': info.paragraph2,
+        'image': info.image,
     }
     return render(request, "read.html", context)
 def login_page(request):

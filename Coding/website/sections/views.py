@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import news
+from .forms import addingnews
 # Create your views here.
 
 def home_view(request):
@@ -34,6 +35,14 @@ def news_page(request):
 
     return render(request, "news.html")
 
+def create_news_page(request):
+    form = addingnews(request.POST or None)
+    if form.is_valid():
+        form.save()
+    context = {
+        'form': form
+    }
+    return render(request, "createnews.html", context)
 def read_page(request, my_id):
     info = news.objects.get(id=my_id)
 

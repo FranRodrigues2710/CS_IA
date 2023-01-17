@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # my pages
-from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, login_page, signup_page, read_page, what_page, css, css2, jpg, jpg2, jpg3, jpg4, jpg5, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
+from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, create_news_page, partners_page, news_page, login_page, signup_page, read_page, what_page, css, css2, jpg, jpg2, jpg3, jpg4, jpg5, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
 
 
 urlpatterns = [
@@ -27,6 +27,7 @@ urlpatterns = [
     path('contact/', contact_page, name='contactpage'),
     path('our-motivation/', motivation_page, name='motivationpage'),
     path('news/', news_page, name='newspage'),
+    path('create-news/', create_news_page, name='createnews'),
     path('partners/', partners_page, name='partnerspage'),
     path('our-purpose/', purpose_page, name='purposepage'),
     path('what-makes-us-unique/', unique_page, name='uniquepage'),

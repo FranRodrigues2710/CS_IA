@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+<form method="post" style="margin: 180px 0px 0px 0px;"> {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save"/>
+</form>
+</html>
+{% endblock %}

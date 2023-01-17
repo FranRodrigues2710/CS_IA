@@ -1,10 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<html lang="en">
 
-<body>
+<section class="content">
 
-</body>
-</html>
+                    <div class="banner">
+                        <div class="container container-sm">
+                            <ul>
+                                <li><a href="/arboris">Arboris</a></li>
+                            </ul>
+
+                            <h1>Login</h1>
+                            <br/><br/>
+                            <form action="" method="post">
+                                {% csrf_token %}
+
+
+                                <input type="submit"
+                                value="Submit" class="btn btn-secondary">
+
+                            </form>
+
+
+
+
+                        </div>
+
+            </section>
 {% endblock %}

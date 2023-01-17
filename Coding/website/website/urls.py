@@ -21,6 +21,8 @@ from sections.views import home_view, contact_page, school_page, purpose_page, u
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('members/', include('members.urls')),
+    path('members/', include('django.contrib.auth.urls')),
     path('arboris/', home_view, name='homepage'),
 #    path('arboris/test/', test, name="testpage"),
     path('', school_page, name='schoolpage'),

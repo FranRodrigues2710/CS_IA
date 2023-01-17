@@ -31,13 +31,8 @@ def partners_page(request):
     return render(request, "partners.html", )
 
 def news_page(request):
-    context = {
-               'title1': news.title.get(),
-               'paragraph1': news.paragraph.get(),
-               'paragraph2': news.paragraph2.get(),
-               'image': news.image.get(),
-               }
-    return render(request, "news.html", context)
+
+    return render(request, "news.html")
 
 def read_page(request, my_id):
     url = news.shortitle.get(id=my_id)

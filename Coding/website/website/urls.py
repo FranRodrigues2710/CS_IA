@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 # my pages
 from sections.views import home_view, contact_page, school_page, purpose_page, unique_page, motivation_page, partners_page, news_page, login_page, signup_page, read_page, what_page, css, css2, jpg, jpg2, jpg3, jpg4, jpg5, fonts, fonts2, js, js2, fonts3, fonts4, fonts5, fonts6
-from read_page import url
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,7 +33,7 @@ urlpatterns = [
     path('what-we-do/', what_page, name='whatpage'),
     path('login/', login_page, name='loginpage'),
     path('signup/', signup_page, name='signuppage'),
-    path(url, read_page, name='readpage'),
+    path('read/<int:my_id>', read_page, name='readpage'),
     path('arboris/static/bootstrap.min.css', css, name='css'),
     path('arboris/static/fontawesome.min.css', css, name='css'),
     path('arboris/static/slick.css', css, name='css'),

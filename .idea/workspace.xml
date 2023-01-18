@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
       <change afterPath="$PROJECT_DIR$/Documentation/~$Crit_B.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coding/website/templates/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/partners.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673950914358</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="work">
+      <created>1674053210975</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053210975</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

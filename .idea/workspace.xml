@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work" />
+    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
+      <change afterPath="$PROJECT_DIR$/Documentation/~$Crit_B.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/partners.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="">
+    <list default="true" id="8df39514-3803-4994-a79c-17bdb6d9bb3d" name="Changes" comment="work">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_17_2023_9_12_AM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_17_2023_9_12_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coding/website/templates/motivation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/motivation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coding/website/templates/unique.html" beforeDir="false" afterPath="$PROJECT_DIR$/Coding/website/templates/unique.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675260625266</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="work">
+      <created>1675260943949</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1675260943949</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -33,8 +33,14 @@ def partners_page(request):
     return render(request, "partners.html", )
 
 def news_page(request):
-
-    return render(request, "news.html")
+    info = news.objects.get(id=2)
+    context = {
+            'title': info.title,
+            'paragraph1': info.paragraph,
+            'paragraph2': info.paragraph2,
+            'image': info.image,
+    }
+    return render(request, "news.html", context)
 
 def create_news_page(request):
     form = addingnews(request.POST or None)

@@ -2,17 +2,18 @@
 
 {% block content %}
 
-<section class="content" style="margin: 200px 0px 0px 0px;">
+<section class="content" style="margin: 100px 0px -400px 0px;">
 
                     <div class="banner">
                         <div class="container container-sm">
                             <ul>
                                 <li><a href="/arboris">Arboris</a></li>
                             </ul>
-
-                            <h1>Login</h1>
+</div>
+</section>
+                            <h1 style="text-align: center;">Login</h1>
                             <br/><br/>
-                            <form method="post">
+                            <form method="post" style="text-align: center;">
                                 {% csrf_token %}
                                 {{ form.as_p }}
                                 <button type="submit">Log in</button>
@@ -21,7 +22,6 @@
 
 
 
-                        </div>
 
-            </section>
+
 {% endblock %}

@@ -2,9 +2,12 @@
 
 {% block content %}
 <html lang="en">
-<form method="post" style="margin: 200px 0px 0px 100px;"> {% csrf_token %}
+<form method="post" style="margin: 200px 150px 30px 100px;">
+    {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Save"/>
+    <input type="reset" value="Clear"/>
+
 </form>
 </html>
 {% endblock %}

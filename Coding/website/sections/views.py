@@ -61,7 +61,10 @@ def read_page(request, my_id):
     }
     return render(request, "read.html", context)
 def login_page(request):
-
+    if request.method == 'POST':
+        form = (request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect('/create-news')
     return render(request, "login.html")
 
 def signup_page(request):
